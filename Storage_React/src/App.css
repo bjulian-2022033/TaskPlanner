@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Poppins;
+	max-width: 98vw;
+	margin: 40px auto;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(to bottom right, #FF8D57, #FF4545);
+	background-attachment: fixed;
+}
+
+
+
+.card-to-do {
+	padding: 25px;
+	border-radius: 20px;
+	width: 100%;
+	/* Cambio de ancho */
+	background-color: transparent;
+	font-family: 'Nunito', sans-serif;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 25px;
+	/* Cambio de margen inferior */
+}
+
+
+.counter-todos {
+
+	margin: 20px 0;
+	/* Cambio de margen */
+	display: flex;
+	justify-content: space-around;
+}
+
+.counter-todos h3 {
+	font-weight: 500;
+	font-size: 20px;
+	/* Cambio de tamaño de fuente */
+}
+
+.counter-todos span {
+	color: #000000;
+	font-weight: 700;
+	font-size: 20px;
+	/* Cambio de tamaño de fuente */
+}
+
+ul {
+	margin-top: 30px;
+	/* Cambio de margen superior */
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+ul li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	padding: 15px;
+	/* Añadido de relleno */
+	border-radius: 10px;
+	/* Añadido de borde redondeado */
+	background-color: #f0f0f0;
+	/* Cambio de fondo de las mini cards*/
+}
+
+ul li span {
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+ul li form {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-update {
+	border: none;
+	font-weight: 500;
+	font-family: inherit;
+	font-size: 18px;
+	color: #555;
+	width: 80%;
+	/* Cambio de ancho */
+	outline: none;
+}
+
+.container-done {
+	background-color: white;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	/* Cambio de borde a redondeado */
+	border: 2px solid var(--verde);
+	cursor: pointer;
+}
+
+.container-done.active {
+	background-color: var(--verde);
+}
+
+.text-decoration-dashed {
+	text-decoration: line-through;
+}
+
+.btn-delete,
+.btn-edit {
+	background-color: transparent;
+	/* Cambio de fondo transparente */
+	color: #555;
+	padding: 10px;
+	/* Reducción de relleno */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid transparent;
+	/* Cambio de borde transparente */
+	border-radius: 50%;
+	transition: all 0.3s;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 14px;
+	/* Reducción de tamaño de fuente */
+}
+
+.btn-delete:hover,
+.btn-edit:hover {
+	color: white;
+	/* Cambio de color al pasar el ratón */
+	border-color: #555;
+	/* Cambio de borde al pasar el ratón */
+}
+
+.add-todo h3 {
+	text-align: center;
+	margin-bottom: 20px;
+	/* Cambio de margen inferior */
+	font-size: 20px;
+	/* Cambio de tamaño de fuente */
+}
+
+.input-add {
+	outline: none;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+	width: 35vw;
+	min-width: 35vw;
+	flex: 1;
+	font-family: inherit;
+	color: #555;
+}
+
+/****** COLUMNAS 1 Y 2 ******/
+
+.form-column-1 {
+	margin-right: de 10% ;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.form-column-2 {
+	margin-left: 10% ;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+/* Estilos para botones */
+.btn-add {
+	margin-top: 20px;
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición para el cambio de color de fondo */
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    width: fit-content; /* Ajusta el ancho del botón al contenido */
+}
+
+.btn-add:hover {
+	background-color: #45a049;
+	/* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para las columnas del formulario */
+.form-container {
+	display: flex;
+	justify-content: space-between;
+	/* Alinear las columnas a los extremos */
+}
+
+.form-column-1,
+.form-column-2 {
+	flex: 1;
+	/* Que ocupen el mismo espacio */
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	/* Ancho del 50% para cada columna */
+}
+
+.input-add {
+	margin-bottom: 12px;/* Espacio entre los elementos de entrada */
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	font-size: 16px;
+}
